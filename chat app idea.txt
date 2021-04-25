@@ -1,0 +1,38 @@
+//psudo code for chat app
+
+//db content encryped strings with int id's
+
+
+user opens app
+
+shown wellcom screen with a button when clicked loads config file
+
+if config file dosnt exsist create a new config file and promt for setup('seed','username',msgid) and save as ____.txt
+
+load chat page and get new messages
+
+save new seed/ids in that file saved as 
+    __.txt
+
+every ___ms refrech shown messages
+
+while user types message prevent ileagal chars
+
+when user presses send
+
+start of try
+
+grab db content as "dbc"
+
+rember last id from "dbc" as "LastId"
+
+get char count of dbc's encryped strings as "roller"
+
+reroll 'seed' "roller" times
+
+foreach char in msgIn
+    next rnd + char fra msgIn = msgOut.char
+
+send msgOut with int (LastId +1) if it fails try again max _times
+
+end of try
